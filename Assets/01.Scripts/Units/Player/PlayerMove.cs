@@ -53,7 +53,7 @@ public class PlayerMove : PlayerBehaviour
 
     public void Translate()
     {
-        if (isMoving)
+        if (isMoving || thisBase.isAttack)
             return;
         thisBase.isMoving = true;
         isMoving = true;

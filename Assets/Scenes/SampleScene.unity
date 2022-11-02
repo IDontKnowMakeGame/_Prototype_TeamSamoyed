@@ -705,8 +705,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bd77194d2368d4f9d144f8a966b788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _behaviours: 000000000100000002000000
+  _behaviours: 00000000010000000200000003000000
   pos:
     worldPos: {x: 0, y: 0, z: 0}
     gamePos: {x: 0, y: 0, z: 0}
   <isRotate>k__BackingField: 0
+  <isMoving>k__BackingField: 0
+  <isAttack>k__BackingField: 0

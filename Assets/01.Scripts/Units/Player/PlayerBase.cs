@@ -12,7 +12,9 @@ public class PlayerBase : MonoBehaviour
     [SerializeField] private Position pos = new Position();
     [field:SerializeField]
     public bool isRotate { get; set; }
+    [field:SerializeField]
     public bool isMoving { get; set; }
+    [field:SerializeField]
     public bool isAttack { get; set; }
     public Position Pos
     {

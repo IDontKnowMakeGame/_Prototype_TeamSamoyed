@@ -9,6 +9,7 @@ public enum BehaviourEnum
     Move,
     Render,
     Animation,
+    Attack
 }
 
 public interface PlayerBehaviour

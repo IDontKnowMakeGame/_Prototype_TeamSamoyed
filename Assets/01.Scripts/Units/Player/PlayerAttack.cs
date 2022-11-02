@@ -2,16 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAttack : MonoBehaviour
+public class PlayerAttack : PlayerBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public PlayerBase thisBase { get; set; }
+    public void Awake()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Start()
+    {
+        
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Z) && !thisBase.isAttack)
+        {
+            thisBase.isAttack = true;
+        }
+    }
+
+    public void LateUpdate()
     {
         
     }

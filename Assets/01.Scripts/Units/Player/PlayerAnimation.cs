@@ -26,7 +26,6 @@ public class PlayerAnimation : PlayerBehaviour
         if (thisBase.isAttack)
         {
             _animator.SetTrigger(AttackHash);
-            thisBase.isAttack = false;
         }
     }
 
