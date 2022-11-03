@@ -705,6 +705,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bd77194d2368d4f9d144f8a966b788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stat:
+    _hp: 0
+    _damage: 0
+    _speed: 0
+    _beforeDelay: 0
+    _afterDelay: 0
+    RageGauge: 0
+    Adrenaline: 0
+    _weapon: {fileID: 0}
   _behaviours: 00000000010000000200000003000000
   pos:
     worldPos: {x: 0, y: 0, z: 0}
