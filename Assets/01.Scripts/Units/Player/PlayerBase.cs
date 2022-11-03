@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class PlayerBase : MonoBehaviour
 {
+    [SerializeField] private PlayerStat _stat = new PlayerStat();
     [SerializeField]
     private List<BehaviourEnum> _behaviours = new List<BehaviourEnum>();
     private List<PlayerBehaviour> _playerBehaviours = new List<PlayerBehaviour>();

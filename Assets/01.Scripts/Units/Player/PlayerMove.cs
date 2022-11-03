@@ -23,22 +23,22 @@ public class PlayerMove : PlayerBehaviour
 
     public void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
             nextDir = Vector3.forward;
             Translate();
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.LeftArrow))
         {
             nextDir = Vector3.left;
             Translate();
         }
-        else if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.DownArrow))
         {
             nextDir = Vector3.back;
             Translate();
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.RightArrow))
         {
             nextDir = Vector3.right;
             Translate();

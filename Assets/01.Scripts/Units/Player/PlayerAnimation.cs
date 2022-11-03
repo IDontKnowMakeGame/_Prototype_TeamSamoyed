@@ -9,6 +9,8 @@ public class PlayerAnimation : PlayerBehaviour
 
     private int MoveHash = Animator.StringToHash("Move");
     private int AttackHash = Animator.StringToHash("Attack");
+
+    private bool isRunningAttackAnime = false;
     public void Awake()
     {
         _animator = thisBase.GetComponentInChildren<Animator>();
@@ -26,6 +28,7 @@ public class PlayerAnimation : PlayerBehaviour
         if (thisBase.isAttack)
         {
             _animator.SetTrigger(AttackHash);
+            thisBase.isAttack = false;
         }
     }
 
